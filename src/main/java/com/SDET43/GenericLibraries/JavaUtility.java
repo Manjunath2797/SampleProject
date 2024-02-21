@@ -30,7 +30,7 @@ public class JavaUtility {
 	}
 	
 	/**
-	 * THis method is used to get system date and date in format
+	 * This method is used to get system date and date in format
 	 * @return
 	 */
 	public String getSystemDateAndTimeInFormat()

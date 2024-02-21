@@ -26,7 +26,7 @@ import com.SDET43.ObjectRepository.LoginPage;
 import com.SDET43.ObjectRepository.OrganizationInfoPage;
 import com.SDET43.ObjectRepository.OrganizationPage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CreateOrganizationTest extends BaseClass{
 
@@ -63,7 +63,7 @@ public class CreateOrganizationTest extends BaseClass{
 		
 //		eLib.getList("Sheet1");
 		CreateOrganizationPage cop = new CreateOrganizationPage(driver);
-		cop.createOrganization(eLib.getList("Sheet1", 0,1), jLib, driver);
+		//cop.createOrganization(eLib.getList("Sheet1", 0,1), jLib, driver);
 		
 //		driver.findElement(By.xpath("//input[@title='Save [Alt+S]']")).click();
 	

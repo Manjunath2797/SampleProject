@@ -3,6 +3,7 @@ package com.SDET43.GenericLibraries;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -19,6 +20,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 /**
  * This class is used to write WebDriver specific methods
@@ -38,7 +40,7 @@ public class WebDriverUtility {
 	 */
 	public void waitForPageLoad(WebDriver driver)
 	{
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 	}
 	
 	/**
@@ -48,8 +50,9 @@ public class WebDriverUtility {
 	 */
 	public void waitForElementToBeVisible(WebDriver driver, WebElement element)
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(element));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	wait.until(ExpectedConditions.visibilityOf(element));
+	
 	}
 	
 	/**

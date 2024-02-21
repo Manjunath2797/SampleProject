@@ -18,7 +18,7 @@ import com.SDET43.ObjectRepository.CreateContactsPage;
 import com.SDET43.ObjectRepository.HomePage;
 import com.SDET43.ObjectRepository.LoginPage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class CreateContactTest {
 
@@ -43,7 +43,7 @@ public class CreateContactTest {
 		String LastName = sh.getRow(1).getCell(2).getStringCellValue();
 	
 		//Launch browser
-		WebDriverManager.chromedriver().setup();
+	//	WebDriverManager.chromedriver().setup();
 		WebDriver driver = null;
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{

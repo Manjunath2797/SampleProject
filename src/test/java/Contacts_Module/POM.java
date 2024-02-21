@@ -20,7 +20,7 @@ import com.SDET43.ObjectRepository.LoginPage;
 import com.SDET43.ObjectRepository.OrganizationInfoPage;
 import com.SDET43.ObjectRepository.OrganizationPage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class POM {
 
@@ -45,7 +45,7 @@ public class POM {
 					String ind = eLib.readDataFromExcel("Organization", 7, 3);
 					String AccType = eLib.readDataFromExcel("Organization", 7, 4);
 					
-					WebDriverManager.chromedriver().setup();
+				//	WebDriverManager.chromedriver().setup();
 					WebDriver driver = new ChromeDriver();
 					driver.manage().window().maximize();
 					driver.get(URL);

@@ -22,7 +22,7 @@ import com.SDET43.ObjectRepository.LoginPage;
 import com.SDET43.ObjectRepository.OrganizationInfoPage;
 import com.SDET43.ObjectRepository.OrganizationPage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 @Listeners(com.SDET43.GenericLibraries.ListenerImplementaionClass.class)
 public class CreateOrgWithIndUsingPOM extends BaseClass{
 
