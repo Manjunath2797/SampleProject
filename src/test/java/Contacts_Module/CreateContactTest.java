@@ -71,15 +71,15 @@ public class CreateContactTest {
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.loginPage(USERNAME, PASSWORD);
+		System.out.println("good");
+	//	HomePage hp = new HomePage(driver);
+		//hp.organizationLink();
 		
-		HomePage hp = new HomePage(driver);
-		hp.organizationLink();
-		
-		ContactsPage cp = new ContactsPage(driver);
-		cp.contactPage();
-		
-		CreateContactsPage ccp = new CreateContactsPage(driver);
-		ccp.createContact(LastName);
+//		ContactsPage cp = new ContactsPage(driver);
+//		cp.contactPage();
+//		
+//		CreateContactsPage ccp = new CreateContactsPage(driver);
+//		ccp.createContact(LastName);
 		
 		//create Contact
 //		driver.findElement(By.linkText("Contacts")).click();
